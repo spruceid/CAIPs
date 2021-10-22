@@ -31,9 +31,11 @@ The namespace "aleo" refers to the Aleo open-source blockchain platform.
 
 #### Reference Definition
 
-The network (chain) identifier is a single byte, an unsigned integer, as
+The network (chain) identifier is an unsigned integer, as
 documented here:
   https://developer.aleo.org/aleo/concepts/transactions#network-id
+and implemented here:
+  https://github.com/AleoHQ/snarkVM/blob/0178f34c73d0c740199d247df3067727c38809c3/dpc/src/traits/network.rs#L43
 
 For CAIP-2 purposes, the network id byte is represented in decimal.
 
@@ -54,11 +56,17 @@ This is a list of manually composed examples
 ```
 # Aleo Mainnet
 aleo:0
+
+# Aleo Testnet 1
+aleo:1
+
+# Aleo Testnet 2
+aleo:2
 ```
 
 ## Links
 
-- [Implementation](https://github.com/AleoHQ/snarkOS/blob/22eb75bbf682c6f8d215a5e20b56b7a8a45b87be/snarkos/display.rs#L93-L96)
+- [Implementation](https://github.com/AleoHQ/snarkVM/blob/0178f34c73d0c740199d247df3067727c38809c3/dpc/src/traits/network.rs#L43)
 
 ## Copyright
 
